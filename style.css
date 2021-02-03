@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:ital,wght@1,300&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background: #F6F9FC;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #f88f01;
+  font-size: 1.5rem;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border: 1px solid #F6F9FC;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.btn {
+  background: #f88f01;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  color: #6a492b;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px #cecece;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.card .fab {
+  margin: 7px;
+  font-size: 30px;
+  background: rgba(230, 230, 230, 0.10);
+  color: #6a492b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card .fab:hover {
+  font-size: 32px;
+  color: #f88f01;
+
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
