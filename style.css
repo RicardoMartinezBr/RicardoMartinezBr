@@ -14,6 +14,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #000;
+  text-align: center;
 }
 
 h2 {
@@ -23,35 +24,55 @@ h2 {
   font-size: 1.5rem;
 }
 
+.card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*margin: 0 auto;*/
+}
+
+.project-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .img-circle {
   border-radius: 50%;
-  border: 1px solid #F6F9FC;
+  box-shadow: 2px 2px 5px #cecece;
 }
 
 .card-text {
   text-align: center;
 }
 
+.images-design {
+  width: 250px;
+  height: 155px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #cecece;
+  margin: 10px;
+}
+
 .btn {
   background: #f88f01;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 20px;
+  padding: 10px 30px;
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
 }
 
 .btn:hover {
   color: #6a492b;
 }
-.container {
-  width: 800px;
-  margin: 0 auto;
-}
 
 .card {
+  width: 80%;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   margin-top: 20px;
   display: flex;
@@ -64,7 +85,6 @@ h2 {
 
 .list-inline {
   list-style: none;
-  padding-left: 0px;
 }
 
 ul {
@@ -87,22 +107,18 @@ ul {
 
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
+
+@media (max-width: 575px){
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 
+
+@media (max-width: 575px){
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
